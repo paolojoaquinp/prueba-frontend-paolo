@@ -45,7 +45,7 @@ export const GlobalStyle = createGlobalStyle`
         --padding-aux: 10px;
     }
     body {
-        background: red;
+        background: var(--primary-blue);
     }
     * {
         box-sizing: border-box;
