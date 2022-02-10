@@ -1,12 +1,17 @@
 import React from 'react';
 import { Nav, Img, Ul, Link } from './styles';
 import Aluxion from '../../assets/images/Aluxion_logo.png';
-
+import {Link as LinkReact} from 'react-router-dom';
 const NavBar: React.FC = () => {
   return (
       <Nav>
-        <Img src={Aluxion} alt="aluxion logo" />
+        <LinkReact to="/">
+           <Img src={Aluxion} alt="aluxion logo"/>
+        </LinkReact>
         <Ul>
+            <Link to="/detail">
+              Vista detalle!!
+            </Link>
             <Link to="/">
               metro
             </Link>

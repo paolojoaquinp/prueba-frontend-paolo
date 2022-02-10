@@ -1,13 +1,15 @@
 import React from 'react';
 import AluxionLogo from '../../assets/images/Aluxion_logo.png';
 import SearchInput from '../SearchInput';
-
+import {Link} from 'react-router-dom';
 import { NavbarContainer, Img } from './styles';
 
 const NavbarDetail: React.FC = () => {
   return (
       <NavbarContainer>
-          <Img src={AluxionLogo} alt="aluxion logo" />
+          <Link to="/">
+            <Img src={AluxionLogo} alt="aluxion logo" />
+          </Link>
           <SearchInput />
       </NavbarContainer>
   );
